@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ListView
+        android:id="@+id/lv_group_list"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:listSelector="@android:color/transparent"
+        />
+    <LinearLayout
+        android:id="@+id/ll_conversation_edit_menu"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_conversion_menu"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/bt_group_newgroup"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:text="创建群组"
+            android:textSize="16sp"
+            android:background="@drawable/selector_btn_ng"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+</LinearLayout>

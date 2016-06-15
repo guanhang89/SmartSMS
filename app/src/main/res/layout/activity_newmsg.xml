@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    >
+
+    <include layout="@layout/layout_titlebar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送给"
+                    android:textSize="16sp"
+                    />
+                <AutoCompleteTextView
+                    android:id="@+id/tv_newmsg_address"
+                    android:completionThreshold="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_normal"
+                    android:hint="请输入号码"
+                    android:inputType="phone"
+                    android:padding="3dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_newmsg_select"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/select_contact_bg"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_newmsg_body"
+                android:background="@drawable/bg_btn_normal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:lines="5"
+                android:gravity="top"
+                android:hint="请输入短信内容"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                >
+                <Button
+                    android:id="@+id/bt_newmsg_send"
+                    android:text="发送"
+                    android:textColor="#99000000"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/selector_btn_ng"
+                    android:layout_width="125dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

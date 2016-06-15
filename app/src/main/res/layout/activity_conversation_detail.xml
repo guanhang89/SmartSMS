@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/layout_titlebar" />
+    <ListView
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/lv_conversation_detail"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </ListView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#292c29"
+        android:padding="5dp"
+        >
+        <EditText
+            android:id="@+id/et_conversation_detail"
+            android:minHeight="32dp"
+            android:background="@drawable/bg_btn_normal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:maxLines="3"
+            />
+        <Button
+            android:id="@+id/bt_conversation_detail"
+            android:layout_marginLeft="5dp"
+            android:minHeight="32dp"
+            android:layout_gravity="center_vertical"
+            android:text="发送"
+            android:background="@drawable/selector_btn_ng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <ListView
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:id="@+id/lv_conversation"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:id="@+id/ll_edit_menu"
+            android:background="@drawable/bg_conversion_menu"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="编辑"
+                android:id="@+id/bt_edit"
+                android:background="@drawable/selector_btn_ng"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:background="@drawable/selector_btn_ng"
+                android:text="新建短信"
+                android:id="@+id/bt_conversation_newsms"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_select_menu"
+            android:background="@drawable/bg_conversion_menu"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationY="60dp"
+            >
+            <Button
+                android:text="全选"
+                android:id="@+id/bt_conversation_select"
+                android:background="@drawable/selector_btn_ng"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:id="@+id/bt_conversation_cancel"
+                android:background="@drawable/selector_btn_ng"
+                android:text="取消选择"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:id="@+id/bt_conversation_delete"
+                android:background="@drawable/selector_btn_ng"
+                android:text="删除"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
